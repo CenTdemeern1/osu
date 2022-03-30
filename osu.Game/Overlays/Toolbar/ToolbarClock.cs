@@ -70,32 +70,32 @@ namespace osu.Game.Overlays.Toolbar
             }, true);
         }
 
-        protected override bool OnClick(ClickEvent e)
-        {
-            cycleDisplayMode();
-            return true;
-        }
+        // protected override bool OnClick(ClickEvent e)
+        // {
+        //     cycleDisplayMode();
+        //     return true;
+        // }
 
-        private void cycleDisplayMode()
-        {
-            switch (clockDisplayMode.Value)
-            {
-                case ToolbarClockDisplayMode.Analog:
-                    clockDisplayMode.Value = ToolbarClockDisplayMode.Full;
-                    break;
+        // private void cycleDisplayMode()
+        // {
+        //     switch (clockDisplayMode.Value)
+        //     {
+        //         case ToolbarClockDisplayMode.Analog:
+        //             clockDisplayMode.Value = ToolbarClockDisplayMode.Full;
+        //             break;
 
-                case ToolbarClockDisplayMode.Digital:
-                    clockDisplayMode.Value = ToolbarClockDisplayMode.Analog;
-                    break;
+        //         case ToolbarClockDisplayMode.Digital:
+        //             clockDisplayMode.Value = ToolbarClockDisplayMode.Analog;
+        //             break;
 
-                case ToolbarClockDisplayMode.DigitalWithRuntime:
-                    clockDisplayMode.Value = ToolbarClockDisplayMode.Digital;
-                    break;
+        //         case ToolbarClockDisplayMode.DigitalWithRuntime:
+        //             clockDisplayMode.Value = ToolbarClockDisplayMode.Digital;
+        //             break;
 
-                case ToolbarClockDisplayMode.Full:
-                    clockDisplayMode.Value = ToolbarClockDisplayMode.DigitalWithRuntime;
-                    break;
-            }
-        }
+        //         case ToolbarClockDisplayMode.Full:
+        //             clockDisplayMode.Value = ToolbarClockDisplayMode.DigitalWithRuntime;
+        //             break;
+        //     }
+        // }
     }
 }

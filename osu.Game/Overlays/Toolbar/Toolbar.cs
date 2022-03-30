@@ -99,12 +99,9 @@ namespace osu.Game.Overlays.Toolbar
                         new ToolbarSocialButton(),
                         new ToolbarWikiButton(),
                         new ToolbarMusicButton(),
-                        //new ToolbarButton
-                        //{
-                        //    Icon = FontAwesome.Solid.search
-                        //},
                         userButton = new ToolbarUserButton(),
                         new ToolbarClock(),
+                        new ToolbarClockButton(),
                         new ToolbarNotificationButton(),
                     }
                 }
